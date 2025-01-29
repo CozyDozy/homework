@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> lesson 61</title>
+    <link rel="shortcut icon" href="./img/html-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="cont">
+        <fieldset>
+            <legend>Форма обратной связи</legend>
+        
+    <form>
+        <label for="">
+            Имя
+            <input type="text" placeholder="Твое имя">
+        </label>
+        <br>
+        <label for="">
+            E-mail
+            <input type="email" placeholder="email" required>
+        </label>
+        <br>
+        <label for="">
+            Телефон
+            <input type="tel" placeholder="8 800 555 35 35">
+        </label>
+        <br>
+        <label for="">
+            Возраст
+            <input type="number" min="14" max="100">
+        </label>
+        <br>
+        <label for="">
+            Дата отправки
+            <input type="date">
+        </label>
+        <br>
+        <label for="">
+            Пол
+            <br>
+            <input type="radio" name="gender">Мужской
+        </label>
+        <br>
+        <label for="">
+            <input type="radio" name="gender">Женский
+        </label>
+        <br>
+        <label for="">
+            Страна проживания
+        <select name="" id="">
+            <option value="">Выбрать Страну</option>
+            <option value="">Россия</option>
+            <option value="">Не Россия</option>
+        </select>
+    </label>
+        <br>
+        <label for="">
+            Сообщение
+            <textarea name="" id="" required></textarea>
+        </label>
+        <br>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+    </form>
+</fieldset>
+</div>
+</body>
+
+</html>
