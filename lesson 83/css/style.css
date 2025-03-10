@@ -1,0 +1,29 @@
+:root {
+    --color-grid: #f0e10a;
+    --text-size: 2vw;
+    --img-width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 10px;
+}
+
+img {
+    width: var(--img-width);
+}
+
+p {
+    background-color: var(--color-grid);
+    font-size: var(--text-size);
+    margin: 0;
+}
+
+.grid-img {}
+
+.div {
+    background-color: var(--color-grid);
+    grid-column: span 2;
+    font-size: calc(var(--text-size) * 2);
+}
