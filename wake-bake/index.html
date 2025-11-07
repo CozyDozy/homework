@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wake & Bake</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -144,13 +143,13 @@
                         Программа обучения
                     </h2>
                     <div class="program__top">
-                            <p class="program__text">
-                                Продолжительность курса — 4 недели
-                                <br>
-                                Программа обучения состоит из 8 модулей
-                                <br>
-                                На каждое занятие отводится по 6 часов
-                            </p>
+                        <p class="program__text">
+                            Продолжительность курса — 4 недели
+                            <br>
+                            Программа обучения состоит из 8 модулей
+                            <br>
+                            На каждое занятие отводится по 6 часов
+                        </p>
                         <ul class="tab-controls">
                             <li class="tab-controls__item">
                                 <a class="tab-controls__link tab-controls__link--active" href="#tab1">
@@ -696,8 +695,86 @@
                             <a class="program__button button" href="#">Оставить заявку</a>
                         </div>
                         <div class="program__img">
-                            <img  src="./img/decor/cake.png" alt="">
+                            <img src="./img/decor/cake.png" alt="">
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__gallery gallery">
+                <div class="container">
+                    <div class="gallery__inner">
+                        <div class="gallery__img">
+                            <img src="img/decor/cupcakes.png" alt="">
+                        </div>
+                        <div class="gallery__content">
+                            <div class="gallery__info">
+                                <h2 class="gallery__title title">
+                                    Фотогалерея
+                                </h2>
+                                <p class="gallery__text">
+                                    Для комфортного обучения сделаны просторные аудитории, где предоставляется
+                                    всё необходимое оборудование. Здесь наши ученики создают кулинарные шедевры
+                                    под присмотром опытных наставников
+                                </p>
+                            </div>
+                            <div class="gallery__nav">
+
+                                <button class="gallery__prev" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.992 1.00778L2.016 6.98377L7.992 12.9598L6.984 13.9678L9.15841e-07 6.98377L6.984 -0.000226144L7.992 1.00778Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M1.00781 7.70312L1.00781 6.26313L13.2478 6.26313L13.2478 7.70313L1.00781 7.70312Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+                                </button>
+                                <div class="gallery__pagination"></div>
+                                <button class="gallery__next" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.25605 12.96L11.232 6.984L5.25605 1.008L6.26405 -3.0528e-07L13.248 6.984L6.26405 13.968L5.25605 12.96Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery__slider swiper">
+                        <div class="gallery__wrapper swiper-wrapper">
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/1.jpg">
+                                <img src="img/content/gallery/1.jpg" alt="девушка делает торт">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/2.jpg">
+                                <img src="img/content/gallery/2.jpg" alt="девушка делает пирожное">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/3.jpg">
+                                <img src="img/content/gallery/3.jpg" alt="девушка с десертом">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/4.jpg">
+                                <img src="img/content/gallery/4.jpg" alt="девушки делают торты">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/4.jpg">
+                                <img src="img/content/gallery/4.jpg" alt="девушки делают торты">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/3.jpg">
+                                <img src="img/content/gallery/3.jpg" alt="девушка с десертом">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/4.jpg">
+                                <img src="img/content/gallery/4.jpg" alt="девушки делают торты">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="img/content/gallery/1.jpg">
+                                <img src="img/content/gallery/1.jpg" alt="девушка делает торт">
+                            </a>
+                        </div>
+
+
                     </div>
                 </div>
             </section>
@@ -821,6 +898,7 @@
         </div>
     </div>
     <script src="js/fslightbox.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
