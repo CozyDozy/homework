@@ -110,7 +110,7 @@
 
     // Слайдер-галерея
 
-    const swiper = new Swiper('.gallery__slider', {
+new Swiper('.gallery__slider', {
   // Optional parameters
 //   direction: 'vertical',
 //   loop: true,
@@ -141,6 +141,40 @@ slidesPerView:1.5,
     // when window width is >= 1101px
     1101: {
       slidesPerView: 4,
+    }
+}
+
+});
+
+    // Слайдер-отзывы
+
+ new Swiper('.testimonials__slider', {
+  // Optional parameters
+//   direction: 'vertical',
+//   loop: true,
+
+spaceBetween: 0,
+slidesPerView:1,
+centeredSlides:true,
+
+ 
+  navigation: {
+    nextEl: '.testimonials__next',
+    prevEl: '.testimonials__prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable:true,
+  },
+
+  // Responsive breakpoints
+breakpoints: {
+    901: {
+        slidesPerView: 2.1,
+    },
+    1201: {
+      slidesPerView: 2.1,
     }
 }
 
