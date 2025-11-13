@@ -4,6 +4,8 @@
     --accent-bg: #ffe0cb;
     --accant-color: #ffa55c;
     --accant-text: #1f1711;
+    --accant-color-2: #ceaad0 ;
+    --input-color: #ac907a;
     --transition: all .4s;
     --border-radius: 20px;
 }
@@ -41,7 +43,7 @@
 
 .main__program,
 .main__gallery,
-.main__testimonials  {
+.main__testimonials {
     padding-bottom: 145px;
 }
 
@@ -130,7 +132,7 @@ rect {
 
 .modal__cancel:hover path,
 .modal__cancel:hover rect {
-    stroke: #ac907a;
+    stroke: var(--input-color);
 }
 
 
@@ -169,7 +171,7 @@ rect {
     top: 12px;
     left: 28px;
     font-size: 11px;
-    color: #ac907a;
+    color: var(--input-color);
 
     opacity: 0;
     transition: var(--transition);
@@ -179,7 +181,7 @@ rect {
 .field__input {
     display: block;
     width: 100%;
-    border: 1px solid #ac907a;
+    border: 1px solid var(--input-color);
     border-radius: 100px;
     padding: 19px 42px 19px 28px;
     background: #00000000;
@@ -194,7 +196,7 @@ rect {
 
 
 .field__input::placeholder {
-    color: #ac907a;
+    color: var(--input-color);
     transition: var(--transition)
 }
 

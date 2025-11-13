@@ -72,7 +72,7 @@
 .about__img-button::before {
     content: '';
     position: absolute;
-    border: 1px solid #ceaad0;
+    border: 1px solid var(--accant-color-2);
     border-radius: 50%;
     inset: 5px;
 
@@ -213,7 +213,7 @@
 .program__price {}
 
 .program__price-text {
-    color: rgba(206, 170, 208, 1);
+    color: var(--accant-color-2);
     line-height: 1.6;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -683,7 +683,7 @@
 }
 
 .testimonials__student-inst {
-    color: rgba(206, 170, 208, 1);
+    color: var(--accant-color-2);
 }
 
 .testimonials__quote {}
@@ -711,6 +711,144 @@
 .testimonials__scrollbar .swiper-scrollbar-drag {
     background: var(--accant-color);
 }
+
+/* ========================  contact  =========================== */
+
+.contact {
+    padding: 140px 0;
+    background: url(../img/decor/bg-contact.png) 50% 0 / cover no-repeat;
+}
+
+.contact__inner {
+    display: flex;
+    align-items: end;
+    gap: 84px;
+    position: relative;
+}
+
+.contact__inner::before {
+    content: url(../img/decor/berries.png);
+    position: absolute;
+    top: -4%;
+    left: 0;
+}
+
+.contact__inner::after {
+    content: url(../img/decor/berries-2.png);
+    position: absolute;
+    top: 4%;
+    right: 0;
+}
+
+.contact__img {}
+
+.contact__img img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 30px #c6b0a14d);
+}
+
+.contact__body {
+    max-width: 420px;
+}
+
+.contact__title {
+    margin-bottom: 20px;
+}
+
+.contact__text {
+    margin-bottom: 40px;
+}
+
+.contact__form {}
+
+.contact__form-label {
+    margin-bottom: 10px;
+}
+
+.field__input {}
+
+.contact__input {}
+
+.contact__input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--input-color);
+    border-radius: 100px;
+    padding: 19px 42px 19px 28px;
+    background: #00000000;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+    transition: var(--transition);
+}
+
+.contact__input:hover {
+    border-color: var(--accant-color);
+}
+
+
+.contact__input::placeholder {
+    color: var(--input-color);
+    transition: var(--transition)
+}
+
+.contact__input:hover::placeholder {
+    color: var(--accant-color);
+}
+
+.contact__check-label {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    max-width: 288px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.contact__check-label a {
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.contact__check-label a:hover {
+    color: var(--accant-color);
+}
+
+.contact__checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1.5px solid var(--input-color);
+    transition: var(--transition);
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact__checkbox::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("../img/icons/check.svg") 50% 50% no-repeat;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.contact__checkbox:hover {
+    border: 1.5px solid var(--accant-color);
+}
+
+.contact__checkbox:checked {
+    border: 1.5px solid var(--accant-color);
+    background: var(--accant-color);
+}
+
+.contact__checkbox:checked::before {
+    opacity: 1;
+}
+
+
 
 /* ========================  media  =========================== */
 
@@ -749,6 +887,13 @@
         text-align: center;
     }
 
+    /* ===== */
+
+    .contact__inner::after {
+        top: -20%;
+        right: 0;
+    }
+
 
 }
 
@@ -773,6 +918,12 @@
     }
 
     .accordion-content {
+        gap: 30px;
+    }
+
+    /* ====== */
+    .contact__inner {
+        align-items: center;
         gap: 30px;
     }
 }
@@ -858,6 +1009,13 @@
     .footer__col:nth-child(3) {
         margin-bottom: 10px;
     }
+/* ======= */
+.contact__inner {
+    justify-content: center;
+}
+    .contact__img {
+        display: none;
+    }
 
 }
 
@@ -931,6 +1089,11 @@
     .testimonials__nav {
         align-self: end;
     }
+    /* ======== */
+    .contact__inner::before {
+    content:'';
+
+}
 }
 
 @media (max-width: 600px) {
@@ -1036,9 +1199,18 @@
     .testimonials__inner {
         margin-bottom: 20px;
     }
+
     .testimonials__slide {
         align-items: center;
         flex-direction: column;
+        text-align: center;
+    }
+    /* ===== */
+    .contact {
+        padding-bottom: 80px;
+    }
+    .contact__title,
+    .contact__text {
         text-align: center;
     }
 }

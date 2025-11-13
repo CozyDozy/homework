@@ -131,7 +131,7 @@
 }
 
 .hero__info {
-    color: rgb(177, 151, 179);
+    color: #b197b3;
     line-height: 1.6;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -147,7 +147,7 @@
 
 .hero__info span::after {
     content: '';
-    background: rgb(177, 151, 179);
+    background: #b197b3;
     border-radius: 50%;
     width: 4px;
     height: 4px;
@@ -201,9 +201,9 @@
     width: 78px;
     height: 78px;
     border-radius: 50%;
-    box-shadow: 0px 4px 20px 0px rgba(184, 148, 126, 0.3);
+    box-shadow: 0px 4px 20px 0px #b8947e4d;
     /* фоновый */
-    background: rgb(255, 224, 203);
+    background: #ffe0cb;
     flex-shrink: 0;
     display: flex;
     align-items: center;
