@@ -89,6 +89,7 @@
            
             const accordionControl = e.target.closest('.accordion-list__control')
             if(!accordionControl) return
+            e.preventDefault()
             const accordionItem = accordionControl.parentElement;
             const accordionContent = accordionControl.nextElementSibling;
 

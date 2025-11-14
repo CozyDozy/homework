@@ -10,6 +10,11 @@
     --border-radius: 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
 .body {
     font-family: "Montserrat", "Arial", sans-serif;
     line-height: 1.5;
