@@ -1,0 +1,69 @@
+/* =======   header   ========= */
+/* Я вообще не знаю как это спозицианировать */
+
+
+.hero__inner {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.hero__title-white,
+.hero__title-black {
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: .98;
+    position: absolute;
+}
+
+.hero__title-white {
+    max-width: 1073px;
+    font-size: 198px;
+    color: #fff;
+    top: -345px;
+    z-index: 0;
+}
+
+.hero__title-black {
+    display: inline;
+    font-size: 397px;
+    top: -295px;
+    right: 100px;
+    z-index: -1;
+    max-width: 1109px;
+    color: var(--general-bg);
+    filter: drop-shadow(1px 1px 1px var(--general-text));
+}
+
+.hero__img {
+    position: relative;
+    z-index: 1;
+
+}
+
+.hero__img img {
+    width: 100%;
+    max-height: 520px;
+}
+
+.hero__btn {
+    position: absolute;
+    top: -61px;
+    left: 48%;
+
+    display: flex;
+    width: 122px;
+    height: 122px;
+    padding: 34px;
+    z-index: 2;
+    background: var(--accant-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.hero__btn:hover {
+    background: rgb(251, 144, 73);
+}

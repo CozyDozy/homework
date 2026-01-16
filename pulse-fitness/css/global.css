@@ -1,0 +1,61 @@
+:root {
+    --general-text: #979797;
+    --general-bg: #141414;
+    --general-bg-2: rgb(217, 217, 217);
+    --accant-text: #ffffff;
+    --accant-color: rgb(244, 117, 33);
+
+
+    --font-family: "Oswald", sans-serif;
+
+
+    --transition: all .4s;
+    --border-radius: 20px;
+}
+
+html {
+     /* scroll-behavior: smooth;
+    scroll-padding-top: 100px; */
+}
+
+.body {
+    font-family: "Archivo", "Arial", sans-serif;
+    line-height: 1.7;
+    color: var(--general-text);
+    background: var(--general-bg);
+}
+
+.body--open-menu {
+    overflow: hidden;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1738px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.main__about {
+    padding-top: 143px;
+    padding-bottom: 198px;
+}
+
+.title {
+      font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 70px;
+     white-space: nowrap;
+}

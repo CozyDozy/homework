@@ -1,0 +1,60 @@
+
+
+.program__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.program__card {
+    background: #fff;
+    padding: 56px 67px 53px 56px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.program__card:hover {
+    transform: translate(5px, -5px);
+    background: #f1aa7a;
+    z-index: 2;
+}
+
+.program__card:hover .program__link span {
+    color: var(--general-bg);
+}
+
+.program__link span {
+    display: inline-block;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    color: #f47521;
+    margin-bottom: 4px;
+}
+
+.program__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 42px;
+    color: #141414;
+    margin-bottom: 176px;
+}
+
+.program__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.program__started {
+    color: #141414;
+    font-weight: 700;
+    line-height: 1.44;
+    letter-spacing: 0.1em;
+}
+
+.program__img {
+    width: 14px;
+    height: 14px;
+}

@@ -1,0 +1,172 @@
+
+
+.header__top {
+    margin-bottom: 424px;
+}
+
+.header__top-inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+
+    padding: 47px 0 52px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+    max-width: 198px;
+    z-index: 11;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 313px;
+
+}
+
+.nav {
+    justify-self: center;
+}
+
+.nav__list {
+    color: var(--accant-text);
+    display: flex;
+    gap: 6vh 50px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav__link:hover:before {
+    opacity: 1;
+}
+
+.nav__link::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    background: var(--accant-color);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+
+    justify-self: end;
+}
+
+.header__cart {
+    width: 38px;
+    height: 33px;
+    position: relative;
+}
+
+.header__cart::before {
+    content: '2';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    background: var(--accant-color);
+    border-radius: 50%;
+}
+
+.header__cart path {
+    width: 100%;
+}
+
+.header__search {
+    width: 29px;
+    height: 29px;
+}
+
+.header__cart path,
+.header__search path {
+    transition: var(--transition);
+}
+
+.header__cart:hover path,
+.header__search:hover path {
+    fill: var(--accant-color);
+}
+
+
+.burger-icon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    z-index: 11;
+
+    justify-self: end;
+}
+
+.burger-icon span {
+    width: 25px;
+    height: 4px;
+    background: var(--accant-text);
+    position: relative;
+}
+
+.burger-icon span::after,
+.burger-icon span::before {
+    content: '';
+    width: 25px;
+    height: 4px;
+    background: var(--accant-text);
+    position: absolute;
+}
+
+.burger-icon span,
+.burger-icon span::after,
+.burger-icon span::before {
+    transition: var(--transition);
+}
+
+.burger-icon span::after {
+    top: 8px;
+}
+
+.burger-icon span::before {
+    bottom: 8px;
+}
+
+.body--open-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--open-menu .burger-icon span::after {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.body--open-menu .burger-icon span::before {
+    bottom: 0px;
+    transform: rotate(-45deg);
+}
