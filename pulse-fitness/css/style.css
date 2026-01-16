@@ -600,7 +600,7 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     height: 480px;
-
+     overflow: hidden; 
 }
 
 .box__img {
@@ -610,6 +610,8 @@
 .box__img img {
     width: 100%;
     height: 100%;
+
+    max-width: 100%;
 }
 
 .box__info {
@@ -912,7 +914,7 @@
     }
 
     .box__link {
-        height: 350px;
+         height: 350px; 
     }
 
     /* =============== */
