@@ -27,18 +27,17 @@ let board = ""
 for (i = 1; i <= 8; i++) {
     let row = ''
     for (j = 1; j <= 8; j++) {
-        for (j = 1; j <= 8; j++) {
 
-            if (j % 2 === 0) {
-                row += 'Ч'
-            } else {
-                row += 'Б'
-            }
-
+        if (j % 2 === 0) {
+            row += 'Ч'
+        } else {
+            row += 'Б'
         }
-        board = board + row + '\n'
 
     }
+    board = board + row + '\n'
+
 }
+
 console.log(board)
 
