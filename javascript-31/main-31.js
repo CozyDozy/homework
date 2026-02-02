@@ -50,19 +50,20 @@ console.log(getTimeOfDay(44))
 // Если чётного числа в этом диапазоне нет, функция должна вернуть "Чётных чисел нет".
 
 const findFirstEven = (start, end) => {
-    if (start < end) {
-        for (let i = start; i <= end; i++) {
-            if (i % 2 === 0) {
-                return i
-            }
+
+    if (start > end) return "Чётных чисел нет"
+
+    for (let i = start; i <= end; i++) {
+        if (i % 2 === 0) {
+            return i
         }
-    } else {
-        return "Чётных чисел нет"
     }
+
+    return "Чётных чисел нет"
 }
 
 
 // Пример работы:
 console.log(findFirstEven(1, 10)); // 2
 console.log(findFirstEven(9, 9)); // "Чётных чисел нет"
-console.log(findFirstEven(45, 60));
+console.log(findFirstEven(46, '46'));
